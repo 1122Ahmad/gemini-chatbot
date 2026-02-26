@@ -1,0 +1,22 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    environment:
+      BACKEND_ROOT: http://backend:8000
+      BACKEND_URL: http://backend:8000/chat
+      STREAMLIT_PORT: 8501
+    depends_on:
+      - backend
+    ports:
+      - "8501:8501"
