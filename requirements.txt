@@ -1,5 +1,9 @@
 fastapi
 uvicorn
 python-dotenv
-google-generativeai
 pydantic
+numpy
+faiss-cpu
+sentence-transformers
+google-genai
+requests
