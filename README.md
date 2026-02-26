@@ -8,7 +8,7 @@ A portfolio-ready customer support chatbot using:
 
 This project simulates a real support assistant for **My Talk Home** with empathetic, step-by-step responses grounded in a knowledge base.
 
-## Why this project is strong for Upwork
+## Why this project is strong
 
 - Demonstrates **end-to-end AI app delivery** (API, retrieval, LLM integration, UI).
 - Includes **client-friendly trust features**:
@@ -74,9 +74,6 @@ docker compose up --build
 - `GET /health` - model + KB health information
 - `POST /chat` - response payload with `reply`, `sources`, `model`, and `latency_ms`
 
-## Upwork portfolio pitch template
-
-> Built a retrieval-augmented customer support chatbot using Gemini + FAISS with a production-friendly FastAPI backend and Streamlit UI. Added source-grounded responses, latency telemetry, health checks, and Dockerized deployment for fast client demos and easier handover.
 
 ## Project structure
 
